@@ -1,0 +1,64 @@
+:root {
+  --lg-container-width: 80%;
+  --md-container-width: 90%;
+  --sm-container-width: 94%;
+
+  /*===============FONT-SIZES=============*/
+  --fs-200: 3rem;
+  --fs-300: 1.5rem;
+  --fs-400: 1rem;
+}
+/*==========================CONTIANEER-VARIBLES====================================*/
+.container {
+  width: var(--lg-container-width);
+  margin: 0 auto;
+}
+
+/*==========================GENERAL-RESET====================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+section {
+  padding: 2rem 0;
+}
+/*==========================CARD-STYLING====================================*/
+
+.header {
+  text-align: center;
+  font-size: var(--fs-200);
+  margin-bottom: 1rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: aliceblue;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 o 4px 3px pink;
+}
+
+.card .title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: var(--fs-300);
+}
+
+.card img {
+  margin: auto;
+  border-radius: 1rem;
+}
