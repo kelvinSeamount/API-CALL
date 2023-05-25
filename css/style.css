@@ -43,6 +43,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  opacity: 0;
 }
 
 .card {
@@ -61,4 +62,9 @@ section {
 .card img {
   margin: auto;
   border-radius: 1rem;
+}
+
+.card > p {
+  margin: 1rem 0;
+  text-align: center;
 }
